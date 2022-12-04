@@ -14,6 +14,12 @@
           {% trans "Wishlist" %} <span class="text-primary">{% trans "details" %}</span>
         </div>
         <div class="form-content">
+          <div>
+            Name: {{object.name}}
+          </div>
+          <div>
+            Status: {{object.status}}
+          </div>
           {% comment %}
           Here show details of wishlist such as: status, address, gifts
           {% endcomment %}

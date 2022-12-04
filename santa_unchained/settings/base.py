@@ -32,6 +32,7 @@ THIRD_PARTY_APPS = [
 
 LOCAL_APPS = [
     "santa_unchained.accounts.apps.AccountsConfig",
+    "santa_unchained.wishes.apps.WishesConfig"
 ]
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS

@@ -17,6 +17,56 @@
             {% comment %}
             Here place your form - use grid layout from chota.
             {% endcomment %}
+            <div class="row">
+              <div class="col-6">
+                <label for="{{ form.name.id_for_label }}">{{ form.name.label }}</label>
+                {{ form.name }}
+                {% comment %} {% include "wishes/partial/field_error.html" with field=form.name %} {% endcomment %}
+              </div>
+              <div class="col-6">
+                <label for="{{ form.email.id_for_label }}">{{ form.email.label }}</label>
+                {{ form.email }}
+                {% comment %} {% include "wishes/partial/field_error.html" with field=form.email %} {% endcomment %}
+              </div>
+              <div class="row">
+                <div class="col">
+                  <label for="{{ form.content.id_for_label }}">{{ form.content.label }}</label>
+                  {{ form.content }}
+                  {% comment %} {% include "wishes/partial/field_error.html" with field=form.content %} {% endcomment %}
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6">
+                  <label for="{{ form.street.id_for_label }}">{{ form.street.label }}</label>
+                  {{ form.street }}
+                  {% comment %} {% include "wishes/partial/field_error.html" with field=form.street %} {% endcomment %}
+                </div>
+                <div class="col-6">
+                  <label for="{{ form.city.id_for_label }}">{{ form.city.label }}</label>
+                  {{ form.city }}
+                  {% comment %} {% include "wishes/partial/field_error.html" with field=form.city %} {% endcomment %}
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6">
+                  <label for="{{ form.post_code.id_for_label }}">{{ form.post_code.label }}</label>
+                  {{ form.post_code }}
+                  {% comment %} {% include "wishes/partial/field_error.html" with field=form.post_code %} {% endcomment %}
+                </div>
+                <div class="col-6">
+                  <label for="{{ form.country.id_for_label }}">{{ form.country.label }}</label>
+                  {{ form.country }}
+                  {% comment %} {% include "wishes/partial/field_error.html" with field=form.country %} {% endcomment %}
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <label for="{{ form.items.id_for_label }}">{{ form.items.label }}</label>
+                  {{ form.items }}
+                  {% comment %} {% include "wishes/partial/field_error.html" with field=form.items %} {% endcomment %}
+                </div>
+              </div>
+            </div>
             <div class="is-center">
               <input class="button secondary radius-10" type="submit" value="Send a wish list">
             </div>

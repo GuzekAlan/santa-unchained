@@ -20,7 +20,7 @@
           Fill in url to wishlist detail.
           {% endcomment %}
           <a class="button primary radius-100"
-             href="#">{% trans "Track order" %}</a>
+             href="{% url 'wishes:wishlist-detail' slug %}">{% trans "Track order" %}</a>
         </div>
       </div>
     </div>
